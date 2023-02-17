@@ -1,0 +1,25 @@
+variable "protocol" {
+  type = string
+}
+
+variable "cidr" {
+  type = string
+}
+variable "instance_type" {
+  default = "t2.micro"
+}
+
+variable "bucket_name" {
+}
+
+variable "elb_name" {
+  type = string
+}
+
+variable "az" {
+  type = list
+}
+
+variable "connection_draining" {
+  type = bool
+}
